@@ -29,8 +29,12 @@ align-items: center;
 justify-content: space-between;
 padding: 0px 50px;
 position: fixed;
+top: 0;
+z-index: 2;
 width: 100%;
 box-shadow: 0;
+background-image: url(./img/1841-color-pastel.jpg);
+
 
 }
 
@@ -57,6 +61,7 @@ box-shadow: 0;
 }
 
 body{
+    /* margin-top: 70px; */
     background-image: url(./img/1841-color-pastel.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,38 +77,129 @@ justify-content: center;
 
 }
 
+/* HERO */
 
 #hero{
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 70px;
-   
-
-}
-.hero_container{
     width: 90%;
-    height: 50px;
+    /* height: 50px; */
     border: solid red 1px;
-    background-color: blue;
-    /* margin-top: 70px; */
+    background-color: rgb(245, 183, 241);
     }
+
+    .hero_info, .hero_imag{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        /* border: solid red 1px; */
+    }
+
+    .hero_info{
+        /* width: 60%; */
+        gap: 30px;
+    }
+    .hero_info h2{
+        text-align: center;
+    }
+    .hero_info_text, .hero_info_btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .hero_info_btn{
+        justify-content: space-between;
+        width: 80%;
+     }
+    
+
+    .hero_info_btn button {
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+    
+    
+
+    
+    .hero_imag_type{
+        width: 90%;
+        /* height: 160px; */
+
+    }
+
+/* ABAUD */
 
 #aboud{
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-    
-.aboud_container{
+    flex-direction: row;
     width: 90%;
-    height: 200px;
+    /* height: 50px; */
     border: solid red 1px;
-    background-color: green;
+    background-color: rgb(238, 181, 95);
+    
+}
+
+    .aboud_imag, .aboud_imag_text, .aboud_info, .aboud_info_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    .aboud_info{
+        gap: 50px;
+        }
+
+    .aboud_info_text h2{
+        text-align: center;
+       
+    }
+    
+
+        
+    .aboud_info_list{
+
 
     }
+
+    .aboud_info_list ul li{
+        list-style-type: circle;
+
+    }
+    
+
+    .aboud_imag_cell{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        /* width: 90%; */
+        /* height: 50px; */
+        border: solid red 1px;
+        background-color: rgb(95, 162, 238);
+    }
+        
+    .aboud_imag_type{
+        width: 50%;
+    }
+
+
+    
 
 #card{
     display:flex;
@@ -115,7 +211,7 @@ justify-content: center;
 
 .card_container{
     width: 90%;
-    height: 400px;
+    /* height: 400px; */
     border: solid red 1px;
     background-color: orange;
 
@@ -130,8 +226,18 @@ justify-content: center;
     
 .contacto_container{
 width: 90%;
-height: 100px;
+/* height: 100px; */
 border: solid red 1px;
 background-color: violet;
 
 }
+
+
+/* estilos responsive
+
+   Extra Small     Small       Medium    Large     X-Large     XX-Large 
+425 < 576px         >= 576px    >= 768px  >= 992px  >= 1200px   >= 1400px */
+
+/* @media(max-width:992px)
+@media(max-width:576px)
+@media(max-width:425px) */
