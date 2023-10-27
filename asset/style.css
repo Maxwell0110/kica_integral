@@ -1,0 +1,137 @@
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+
+.header_logo{
+
+    height: 70px;
+}
+
+
+.header{
+height: 70px;
+display: flex;
+flex-direction: row;
+gap: 30px;
+align-items: center;
+justify-content: space-between;
+padding: 0px 50px;
+position: fixed;
+width: 100%;
+box-shadow: 0;
+
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    
+}
+
+#menu-bars, .navbar i{
+    display: none;
+}
+
+body{
+    background-image: url(./img/1841-color-pastel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+main{
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items:center;
+justify-content: center;
+
+
+}
+
+
+#hero{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+   
+
+}
+.hero_container{
+    width: 90%;
+    height: 50px;
+    border: solid red 1px;
+    background-color: blue;
+    /* margin-top: 70px; */
+    }
+
+#aboud{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    
+.aboud_container{
+    width: 90%;
+    height: 200px;
+    border: solid red 1px;
+    background-color: green;
+
+    }
+
+#card{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card_container{
+    width: 90%;
+    height: 400px;
+    border: solid red 1px;
+    background-color: orange;
+
+    }    
+
+#contacto{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    
+.contacto_container{
+width: 90%;
+height: 100px;
+border: solid red 1px;
+background-color: violet;
+
+}
