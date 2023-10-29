@@ -1,5 +1,21 @@
 
 
+:root {
+    /* bg colors */
+    --bg1: #e8cbf1;
+    --bg2: #e0a8f1;
+    --bg3: rgb(255, 0, 234);
+    --bgn1: rgb(244, 199, 133);
+    --bgn2: rgb(219, 151, 49);
+    --bgn3: rgb(223, 134, 0);
+
+    --primary: #e8cbf1;
+    --secondary: #e0a8f1;
+    
+    --btn_bg: #050d26;
+    --btn_br: #fff;
+}
+    
 
 
 
@@ -63,12 +79,21 @@ background-image: url(./img/1841-color-pastel.jpg);
 color:black;
 }
 
+/* REFERENCIAS a misma pagina */
+
+#hero_id h2, #aboud_id h2, #card_id h2, #contacto_id h2{
+    margin-top: 80px;
+    }
+
+
+
 
 body{
     margin-top: 70px;
-    background-image: url(./img/1841-color-pastel.jpg);
+    background-color: var(--bg1);
+  /* background-image: url(./img/1826-color-pastel.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     }
 
 main{
@@ -82,6 +107,9 @@ margin-top: 70px;
 
 }
 
+
+    
+
 /* HERO.................................................... */
 
 #hero{
@@ -89,11 +117,12 @@ margin-top: 70px;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     width: 90%;
     /* height: 50px; */
-    border: solid red 1px;
-    background-color: rgb(245, 183, 241);
+    /* border: solid red 1px; */
+    box-shadow: 5px 5px 20px rgba(242, 43, 166, 0.5)  ;
+    background-color: var(--bg2);
     }
 
     .hero_info, .hero_imag{
@@ -119,20 +148,29 @@ margin-top: 70px;
         align-items: center;
         justify-content: center;
         gap: 30px;
+       
     }
+    .hero_info_text p{
 
+        width: 50%;
+    }
+    
     .hero_info_btn{
         justify-content: space-between;
         width: 80%;
      }
     
 
-    .hero_info_btn button {
+    .hero_info_btn a , .hero_info_btn button {
         width: 80px;
         height: 40px;
         border-radius: 10px;
         cursor: pointer;
-        border: 1px solid black;
+        border: 1px solid var(--bg3);
+        background-color: var(--bg1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     
@@ -144,6 +182,14 @@ margin-top: 70px;
 
     }
 
+    .separador{
+        width: 100%;
+        height: 5px;
+        /* border: 1px solid var(--bg3); */
+        background-color: var(--bg1);
+        box-shadow: 5px 5px 20px rgba(242, 43, 166, 0.5)  ;
+    }
+
 /* ABAUD................................................ */
 
 #aboud{
@@ -153,8 +199,8 @@ margin-top: 70px;
     flex-direction: row;
     width: 90%;
     /* height: 50px; */
-    border: solid red 1px;
-    background-color: rgb(238, 181, 95);
+    box-shadow: 5px 5px 20px var(--bgn3); 
+    background-color: var(--bgn1);
     
 }
 
@@ -188,8 +234,8 @@ margin-top: 70px;
         gap: 5px;
         /* width: 90%; */
         /* height: 50px; */
-        border: solid red 1px;
-        background-color: rgb(95, 162, 238);
+        border: solid var(--bgn3) 1px;
+        background-color: var(--bgn2);
     }
         
     .aboud_imag_type{
@@ -207,9 +253,10 @@ margin-top: 70px;
     flex-wrap: wrap;
     width: 90%;
     /* height: 50px; */
-    border: solid red 1px;
-    background-color: rgb(245, 183, 241);
-    gap: 10px;
+    /* border: solid red 1px; */
+    background-color: var(--bg2);
+    box-shadow: 5px 5px 20px rgba(242, 43, 166, 0.5)  ;
+    gap: 30px;
     padding: 10px 0px;
 }
 
@@ -223,6 +270,8 @@ margin-top: 70px;
         min-width: 200px;
         width: 20%;
         height: 300px;
+        border-radius: 25%;
+        background-color: var(--bg1);
     }
 
     .card_info  {
@@ -231,8 +280,8 @@ margin-top: 70px;
         align-items: center;
         flex-direction: row;
         /* gap: 50px; */
-        border: solid red 1px;
-        width: 90%;
+        /* border: solid red 1px; */
+        width: 80%;
     }  
 
    .card_container img{
@@ -242,15 +291,25 @@ margin-top: 70px;
 
    .card_container h3{
     text-align: center;
+    max-width: 70%;
    }
 
-   .card_info button{
+   .card_info button, .card_info a{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid black;
     background-color: rgb(177, 223, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   }
+
+   .card_info p span{
+    font-size: 0.75rem;
+
 
    }
 
@@ -263,38 +322,79 @@ margin-top: 70px;
     align-items: center;
     flex-direction: row;
     width: 90%;
-    border: solid red 1px;
-    background-color: rgb(245, 183, 241);
+    /* border: solid red 1px; */
+    background-color: var(--bgn1);
+    box-shadow: 5px 5px 20px var(--bgn3); 
     gap: 10px;
     padding: 0;
 }
     
-.fomr_info{
+.form_info{
     width: 70%;
-    border: solid red 1px;
+    /* border: solid red 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0px;
 }
 
-.form.img{
+.form_info a{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background-color: var(--bgn2);
+border: 1px var(--bgn3) solid;
+border-radius: 5px;
+}
+
+.form_img{
     width: 30%;
-    border: solid red 1px;
+    /* border: solid red 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form_item{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     gap: 5px;
+    width: 90%;
 
 }
 
 .contacto_logo{
-width: 70px;
+width: 90%;
+
 
 }
 
+.form_item input{
+width: 50%;
+height: 20px;
+min-width: 200px;
+background-color: var(--bgn2);
 
+}
 
+.text input{
+    width: 50%;
+    height: 6rem;
+    
+    }
+
+.form_item label{
+    /* width: 115px; */
+    height: 20px;
+    min-width: 60px;
+    
+    }
 
 
 
@@ -308,8 +408,8 @@ width: 70px;
     justify-content: space-between;
     align-items: center;
     gap: 5px;
-
-    border: 1px solid red;
+    margin-top: 70px;
+    /* border: 1px solid red; */
     background-image: url(./img/1841-color-pastel.jpg);
 
 
@@ -322,23 +422,28 @@ width: 70px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 5px;
+        gap: 15px;
         /* width: 20%; */
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     .footer_cont {
-        width: 30%;
+        /* width: 30%; */
         text-align: center;
     }
-
-
-
 
     .footer_logo{
         height: 70px;
         justify-content: center;
     }
+.data{
+width: 50%;
+flex-wrap: wrap;
+justify-content: center;
+}
 
+.media{
+        width: 30%;
+}
 
 /* estilos responsive
 
