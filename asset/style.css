@@ -15,7 +15,6 @@
 
 
 .header_logo{
-
     height: 70px;
 }
 
@@ -83,7 +82,7 @@ margin-top: 70px;
 
 }
 
-/* HERO */
+/* HERO.................................................... */
 
 #hero{
     display:flex;
@@ -145,7 +144,7 @@ margin-top: 70px;
 
     }
 
-/* ABAUD */
+/* ABAUD................................................ */
 
 #aboud{
     display:flex;
@@ -198,7 +197,7 @@ margin-top: 70px;
     }
 
 
-    
+    /* CARD................................................ */
 
 #card{
     display:flex;
@@ -256,22 +255,89 @@ margin-top: 70px;
    }
 
 
-
+/* CONTACTO................................. */
 
 #contacto{
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    width: 90%;
+    border: solid red 1px;
+    background-color: rgb(245, 183, 241);
+    gap: 10px;
+    padding: 0;
 }
     
-.contacto_container{
-width: 90%;
-/* height: 100px; */
-border: solid red 1px;
-background-color: violet;
+.fomr_info{
+    width: 70%;
+    border: solid red 1px;
+}
+
+.form.img{
+    width: 30%;
+    border: solid red 1px;
+}
+
+.form_item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
 
 }
+
+.contacto_logo{
+width: 70px;
+
+}
+
+
+
+
+
+
+/* FOOTER ............................................*/
+
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    border: 1px solid red;
+    background-image: url(./img/1841-color-pastel.jpg);
+
+
+}
+
+
+
+    .footer_icon, .footer_cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        /* width: 20%; */
+        border: 1px solid red;
+    }
+    .footer_cont {
+        width: 30%;
+        text-align: center;
+    }
+
+
+
+
+    .footer_logo{
+        height: 70px;
+        justify-content: center;
+    }
 
 
 /* estilos responsive
