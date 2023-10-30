@@ -1,3 +1,4 @@
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
 
 
 :root {
@@ -25,6 +26,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'EB Garamond', serif;
 }
 
 
@@ -414,6 +416,7 @@ background-color: var(--bgn2);
     margin-bottom: 0px;
     box-shadow: -1px -5px 20px rgb(236, 147, 252)  ;
     padding: 0 5px;
+    width: 100%;
 
 
 }
@@ -430,7 +433,7 @@ background-color: var(--bgn2);
         /* border: 1px solid red; */
     }
     .footer_cont {
-        /* width: 30%; */
+        
         text-align: center;
     }
 
@@ -442,6 +445,7 @@ background-color: var(--bgn2);
 width: 50%;
 flex-wrap: wrap;
 justify-content: center;
+
 }
 
 .media{
@@ -505,12 +509,35 @@ justify-content: center;
         display: flex;
     }
 
+    .hero_imag{
+        display: none;
+    }
 
 
-    
+
 }
 
+@media(max-width:576px){
 
-/* @media(max-width:992px)
+    #aboud{
+        flex-wrap: wrap;
+    }
+    
+    .form_img {
+        display: none;
 
-@media(max-width:425px) */
+    }
+
+    .aboud_info_list{
+width: 90%;
+
+    }
+    .data{
+       gap:2px;
+        
+        }
+  .footer_icon{
+    gap:5px;
+  }
+}
+
