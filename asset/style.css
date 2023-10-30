@@ -47,7 +47,7 @@ position: fixed;
 top: 0;
 z-index: 2;
 width: 100%;
-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5)  ;
+box-shadow: 0px 5px 20px rgb(236, 147, 252)  ;
 background-image: url(./img/1841-color-pastel.jpg);
 
 
@@ -81,7 +81,7 @@ color:black;
 
 /* REFERENCIAS a misma pagina */
 
-#hero_id h2, #aboud_id h2, #card_id h2, #contacto_id h2{
+#hero_id h2, #aboud_id h2, #card_id h2, #contacto_id h2, #registro h2 #login h2{
     margin-top: 80px;
     }
 
@@ -411,6 +411,9 @@ background-color: var(--bgn2);
     margin-top: 70px;
     /* border: 1px solid red; */
     background-image: url(./img/1841-color-pastel.jpg);
+    margin-bottom: 0px;
+    box-shadow: -1px -5px 20px rgb(236, 147, 252)  ;
+    padding: 0 5px;
 
 
 }
@@ -445,6 +448,36 @@ justify-content: center;
         width: 30%;
 }
 
+
+.main_r{
+
+    height: 75vh;
+}
+
+.section_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.form_registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    text-align: left;
+}
+
+
+
+
+
+
 /* estilos responsive
 
    Extra Small     Small       Medium    Large     X-Large     XX-Large 
@@ -453,7 +486,7 @@ justify-content: center;
 @media(max-width:576px){
 
     .lista{
-        background: aquamarine;
+        background-color: var(--bgn1);
         width: 90%;
         height: calc(100vh - 70px);
         position: absolute;
@@ -465,16 +498,16 @@ justify-content: center;
         display:  none;
 
     }
-
     .navbar i{
         display: block;
     }
-
     #menu-bars:checked ~ .lista {
         display: flex;
     }
 
 
+
+    
 }
 
 
