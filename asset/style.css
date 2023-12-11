@@ -127,6 +127,10 @@ margin-top: 70px;
     background-color: var(--bg2);
     }
 
+    #hero_id h2{
+        text-align: center;
+    }
+
     .hero_info, .hero_imag{
         display: flex;
         flex-direction: column;
@@ -144,6 +148,11 @@ margin-top: 70px;
     .hero_info h2{
         text-align: center;
     }
+
+   
+
+
+
     .hero_info_text, .hero_info_btn{
         display: flex;
         flex-direction: row;
@@ -412,11 +421,12 @@ background-color: var(--bgn2);
     gap: 5px;
     margin-top: 70px;
     /* border: 1px solid red; */
-    background-image: url(./img/1841-color-pastel.jpg);
+
     margin-bottom: 0px;
     box-shadow: -1px -5px 20px rgb(236, 147, 252)  ;
     padding: 0 5px;
     width: 100%;
+    background-image: url(./img/1841-color-pastel.jpg);
 
 
 }
@@ -452,6 +462,10 @@ justify-content: center;
         width: 30%;
 }
 
+.fa-brands{
+
+    color:var(--bgn3)
+}
 
 .main_r{
 
@@ -487,7 +501,7 @@ justify-content: center;
    Extra Small     Small       Medium    Large     X-Large     XX-Large 
 425 < 576px         >= 576px    >= 768px  >= 992px  >= 1200px   >= 1400px */
 
-@media(max-width:576px){
+@media(max-width:768px){
 
     .lista{
         background-color: var(--bgn1);
@@ -517,7 +531,7 @@ justify-content: center;
 
 }
 
-@media(max-width:576px){
+@media(max-width:768px){
 
     #aboud{
         flex-wrap: wrap;
@@ -539,5 +553,28 @@ width: 90%;
   .footer_icon{
     gap:5px;
   }
+
 }
 
+@media(max-width:400px){
+    .form_item {
+    flex-direction: column;
+}
+
+.data{
+    gap:15px;
+     
+     }
+
+.media {
+    
+    flex-direction: column;
+  
+}
+
+.footer_logo {
+    height: 50px;
+}
+
+
+}
